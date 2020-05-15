@@ -37,14 +37,6 @@ describe('Check error page', function() {
   })
 })
 
-describe('Weather API fails', function() {
-  it('Responds with 500', function(done) {
-    request(app)
-      .get('/api/weather/51.40329/0.05619')
-      .expect(500, done)
-  })
-})
-
 describe('Monitor API returns data', function() {
   it('Responds with 500', function(done) {
     request(app)

@@ -50,13 +50,6 @@
             <a class="btn btn-success btn-lg" href="/monitor"><i class="fas fa-chart-line"></i>&nbsp; Monitor</a>
           </li>  
 
-          <%if (process.env.WEATHER_API_KEY) { %>
-            &nbsp;
-            <li class="nav-item active">
-              <a class="btn btn-success btn-lg" href="/weather"><i class="fas fa-cloud"></i>&nbsp; Weather</a>
-            </li> 
-          <% } %>
-
           <%if (process.env.TODO_MONGO_CONNSTR) { %>
             &nbsp;
             <li class="nav-item active">
